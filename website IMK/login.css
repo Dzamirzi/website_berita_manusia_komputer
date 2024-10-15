@@ -1,0 +1,156 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML styling */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Mencegah scroll */
+}
+
+/* Main container layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan di sekitar kontainer */
+    border-radius: 10px; /* Membuat sudut kontainer membulat */
+}
+
+/* Logo styling */
+.logo {
+    font-size: 200px; /* Ukuran font logo besar */
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -50px; /* Mengatur posisi logo sedikit lebih ke atas dengan margin negatif */
+}
+
+/* Site name styling */
+.site-name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Form input group styling (membuat label dan input sejajar) */
+.input-group {
+    display: flex;
+    align-items: center; /* Vertikal sejajar antara gambar dan input */
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Styling untuk gambar ikon input */
+.input-icon {
+    width: 24px; /* Mengatur lebar gambar ikon */
+    height: auto; /* Mengatur tinggi secara proporsional agar gambar tidak terdistorsi */
+    margin-right: 10px; /* Jarak antara gambar dan kolom input */
+}
+
+/* Styling untuk input form */
+.input-group input {
+    flex: 1; /* Membuat input mengambil sisa lebar */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Forgot password link */
+.forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Login button */
+.login-btn {
+    width: 100%; /* Tombol login melebar mengikuti form */
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Register section */
+.register {
+    margin-top: 20px;
+}
+
+.register p {
+    font-size: 14px;
+}
+
+.register a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/* Social login icons */
+.social-login {
+    margin-top: 20px;
+}
+
+/* Styling untuk ikon login sosial */
+.social-login img {
+    width: 40px; /* Ukuran lebar ikon login sosial */
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Responsive design untuk iPhone 14 Pro Max */
+@media screen and (max-width: 430px) {
+    .container {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 50px; /* Ukuran logo untuk layar kecil */
+    }
+
+    .site-name {
+        font-size: 20px; /* Ukuran nama situs untuk layar kecil */
+    }
+
+    .input-group input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .login-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .social-login img {
+        width: 30px; /* Ukuran ikon sosial login lebih kecil di layar kecil */
+    }
+}

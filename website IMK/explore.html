@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - News App</title>
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+
+    <!-- Placeholder untuk Header -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Bagian Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="search" id="search-input">
+            <button id="search-btn"><img src="icon/search.png" alt="Search Icon"></button>
+        </div>
+
+        <!-- Kategori Berita -->
+        <section class="category-section">
+            <h2>Explore by Category</h2>
+            <div class="category-list">
+                <button class="category-btn">Politics</button>
+                <button class="category-btn">Technology</button>
+                <button class="category-btn">Sports</button>
+                <button class="category-btn">Health</button>
+                <button class="category-btn">Entertainment</button>
+            </div>
+        </section>
+
+        <!-- Artikel Trending -->
+        <section class="trending-section">
+            <h2>Trending News</h2>
+            <div class="trending-list">
+                <article class="trending-item">
+                    <a href="news_page.html?id=1"> <!-- Mengarah ke berita dengan ID 1 -->
+                        <img src="hot news/bearish.jpeg" alt="News Image">
+                        <h3>Bear Market Strikes: Crypto Traders Face Declining Trends in 2024</h3>
+                        <p>As bearish sentiments sweep the cryptocurrency market, investors brace for downturns in major digital assets. The latest data shows a significant drop in trading volumes and....</p>
+                    </a>
+                </article>
+
+                <article class="trending-item">
+                    <a href="news_page.html?id=2"> <!-- Mengarah ke berita dengan ID 2 -->
+                        <img src="hot news/trump.jpg" alt="News Image">
+                        <h3>Unity and Progress: Leaders Celebrate Victory Together</h3>
+                        <p>In a powerful display of solidarity, political leaders join hands on stage following a significant victory. The event, marked by....</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Rekomendasi Artikel -->
+        <section class="recommendation-section">
+            <h2>Recommended for You</h2>
+            <div class="recommendation-list">
+                <article class="recommendation-item">
+                    <a href="news_page.html?id=3"> <!-- Mengarah ke berita dengan ID 3 -->
+                        <img src="hot news/prabowo.jpeg" alt="Recommendation Image">
+                        <h3>Prabowo Maju dalam Pemilihan Presiden 2024</h3>
+                        <p>Prabowo Subianto mengumumkan pencalonannya sebagai presiden 2024 dengan dukungan Gibran Rakabuming Raka dalam sebuah....
+
+                        </p>
+                    </a>
+                </article>
+
+                <article class="recommendation-item">
+                    <a href="news_page.html?id=4"> <!-- Mengarah ke berita dengan ID 4 -->
+                        <img src="hot news/crypto vs dollar.jpg" alt="Recommendation Image">
+                        <h3>Mata Uang Kripto vs Mata Uang Tradisional: Pertarungan Antara Bitcoin dan Sistem Keuangan Global</h3>
+                        <p>Bitcoin bersebelahan dengan mata uang fiat, mencerminkan pergeseran perhatian investor terhadap.....</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Placeholder untuk Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript untuk memuat header, footer, dan Dark Mode -->
+    <script src="script.js"></script>
+
+    <!-- Script untuk memeriksa status Dark Mode dari Local Storage -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const darkModeStatus = localStorage.getItem('darkMode');
+            if (darkModeStatus === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+
+</body>
+</html>

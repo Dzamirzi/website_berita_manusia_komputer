@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <!-- Placeholder untuk header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Judul Settings -->
+    <h1 class="page-title">Settings</h1>
+
+    <main id="settings-options">
+        <!-- Update Username -->
+        <section class="setting-item">
+            <h2>Update Username</h2>
+            <input type="text" id="new-username" placeholder="Enter new username">
+            <button id="update-username-btn">Update Username</button>
+        </section>
+
+        <!-- Update Password -->
+        <section class="setting-item">
+            <h2>Update Password</h2>
+            <input type="password" id="new-password" placeholder="Enter new password">
+            <button id="update-password-btn">Update Password</button>
+        </section>
+
+        <!-- Dark Mode -->
+        <section class="setting-item">
+            <h2>Dark Mode</h2>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider round"></span>
+            </label>
+        </section>
+
+        <!-- Notification Settings -->
+        <section class="setting-item">
+            <h2>Notifications</h2>
+            <label for="notifications-toggle">Enable Notifications:</label>
+            <input type="checkbox" id="notifications-toggle">
+        </section>
+
+        <!-- Logout Button -->
+        <section class="setting-item">
+            <button id="logout-btn">Logout</button>
+        </section>
+    </main>
+
+    <!-- Placeholder untuk footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript untuk memuat header, footer, dan interaksi settings -->
+    <script src="script.js"></script>
+    <script src="settings.js"></script>
+</body>
+</html>

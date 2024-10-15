@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="hot news/profile.jpg" alt="profile" class="profile-picture">
+                <span>Welcome, <strong>Mr. Smith Bob</strong></span>
+            </div>
+            <div class="notification">
+                <button><i class="fa fa-bell"></i></button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Search bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="search">
+        <button><i class="fa fa-search"></i></button>
+    </div>
+    
+    <!-- Hot News Section -->
+    <section class="hot-news">
+        <div class="section-header">
+            <h2>Hot News</h2>
+            <a href="#">see all</a>
+        </div>
+        <div class="news-carousel">
+            <div class="news-item">
+                <a href="news_page.html?id=1">
+                    <img src="hot news/trump.jpg" alt="Cerita Terbesar Dekade Ini, Dari Barack Obama Hingga Donald Trump - NPR">
+                    <div class="news-description">
+                        <h4>Cerita Terbesar Dekade Ini, Dari Barack Obama Hingga Donald Trump - NPR</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=2">
+                    <img src="hot news/crypto vs dollar.jpg" alt="Mata Uang Kripto vs Mata Uang Tradisional: Pertarungan Antara Bitcoin dan Sistem Keuangan Global">
+                    <div class="news-description">
+                        <h4>Mata Uang Kripto vs Mata Uang Tradisional: Pertarungan Antara Bitcoin dan Sistem Keuangan Global</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=3">
+                    <img src="hot news/prabowo.jpeg" alt="Prabowo Maju dalam Pemilihan Presiden 2024">
+                    <div class="news-description">
+                        <h4>Prabowo Maju dalam Pemilihan Presiden 2024</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=4">
+                    <img src="hot news/bearish.jpeg" alt="Tren Pasar Bearish Menghantam Pedagang Crypto">
+                    <div class="news-description">
+                        <h4>Tren Pasar Bearish Menghantam Pedagang Crypto</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=5">
+                    <img src="hot news/pulau.jpg" alt="Pulau Tropis Eksotis Ditemukan">
+                    <div class="news-description">
+                        <h4>Pulau Tropis Eksotis Ditemukan</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current News Section -->
+    <section class="current-news">
+        <div class="section-header">
+            <h2>Current News</h2>
+            <a href="#">see all</a>
+        </div>
+
+        <div class="news-categories">
+            <button class="category active">All</button>
+            <button class="category">Sport</button>
+            <button class="category">Business</button>
+            <button class="category">Politics</button>
+        </div>
+
+        <div class="current-news-list">
+            <div class="news-item">
+                <a href="news_page.html?id=6">
+                    <img src="current/ac millan.jpeg" alt="New Horizons: Bright Skies Ahead for Innovative Visionaries">
+                    <h4>New Horizons: Bright Skies Ahead for Innovative Visionaries</h4>
+                    <p>by Mr. Bob</p> <!-- Sesuai dengan berita -->
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=7">
+                    <img src="current/manuk abang.jpg" alt="Rare Scarlet Macaw Spotted in the Heart of the Rainforest">
+                    <h4>Rare Scarlet Macaw Spotted in the Heart of the Rainforest: A Symbol of Nature’s Resilience</h4>
+                    <p>by Rabbit Travel</p> <!-- Sesuai dengan berita -->
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=8">
+                    <img src="current/china.jpg" alt="Perkembangan Ekonomi China di Tengah Ketidakpastian Global">
+                    <h4>Perkembangan Ekonomi China di Tengah Ketidakpastian Global</h4>
+                    <p>by Sarah Lee</p> <!-- Sesuai dengan berita -->
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=9">
+                    <img src="current/economy.jpg" alt="Tantangan Ekonomi Global di Tahun 2024">
+                    <h4>Tantangan Ekonomi Global di Tahun 2024</h4>
+                    <p>by John Doe</p> <!-- Sesuai dengan berita -->
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=10">
+                    <img src="current/ema.png" alt="Strategi Investasi Emas di Masa Depan">
+                    <h4>Strategi Investasi Emas di Masa Depan</h4>
+                    <p>by Emily White</p> <!-- Sesuai dengan berita -->
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=11">
+                    <img src="current/grafik.png" alt="Data Grafik Menunjukkan Tren Penurunan">
+                    <h4>Data Grafik Menunjukkan Tren Penurunan</h4>
+                    <p>by David Green</p> <!-- Sesuai dengan berita -->
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=12">
+                    <img src="current/lgbt.jpg" alt="Perjuangan Hak LGBT di Era Modern">
+                    <h4>Perjuangan Hak LGBT di Era Modern</h4>
+                    <p>by Alice Brown</p> <!-- Sesuai dengan berita -->
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=13">
+                    <img src="current/putin.jpg" alt="Putin dan Kebijakan Geopolitik Rusia">
+                    <h4>Putin dan Kebijakan Geopolitik Rusia</h4>
+                    <p>by Vladimir Ivanov</p> <!-- Sesuai dengan berita -->
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=14">
+                    <img src="current/wukong.png" alt="Mitologi Sun Wukong dalam Budaya Asia">
+                    <h4>Mitologi Sun Wukong dalam Budaya Asia</h4>
+                    <p>by Zhen Zhang</p> <!-- Sesuai dengan berita -->
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news_page.html?id=15">
+                    <img src="current/crypto vs dollar.jpg" alt="Pertarungan Kripto vs Dolar dalam Ekonomi Dunia">
+                    <h4>Pertarungan Kripto vs Dolar dalam Ekonomi Dunia</h4>
+                    <p>by Michael Roberts</p> <!-- Sesuai dengan berita -->
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placeholder untuk Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript untuk memuat footer, header, dan navigasi -->
+    <script src="script.js"></script>
+
+    <!-- Script untuk memeriksa status Dark Mode dari Local Storage -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const darkModeStatus = localStorage.getItem('darkMode');
+            if (darkModeStatus === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</body>
+</html>

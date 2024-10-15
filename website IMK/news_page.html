@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Berita</title>
+    <link rel="stylesheet" href="css/news_page.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <!-- Placeholder untuk Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Konten Berita -->
+    <section class="news-content" id="news-content-section">
+        <div class="news-image">
+            <img src="images/default.jpg" alt="Gambar Berita" id="news-image">
+        </div>
+        <div class="news-text">
+            <h1 id="news-title">Judul Berita</h1>
+            <p id="news-author">Oleh Penulis | Tanggal</p>
+            <div id="news-content">Ini adalah konten berita yang akan diisi secara dinamis berdasarkan ID...</div>
+        </div>
+    </section>
+
+    <!-- Placeholder untuk Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Berita disimpan di dalam HTML sebagai elemen tersembunyi -->
+    <div style="display: none;">
+        <!-- News 1 -->
+        <div id="news-1" data-title="Bitcoin dan Mata Uang Tradisional" data-author="Jane Doe" data-date="14 Oktober 2024">
+            <img src="News/news 1.jpg" alt="Bitcoin">
+            <p>
+                Dalam satu dekade terakhir, Bitcoin telah menjadi salah satu topik perbincangan paling menarik di dunia keuangan. Sebagai cryptocurrency 
+                pertama yang diciptakan oleh sosok misterius bernama Satoshi Nakamoto pada tahun 2009, Bitcoin menawarkan pendekatan radikal terhadap cara 
+                kita memandang uang. Dalam sistem keuangan tradisional, uang dikelola oleh bank sentral dan pemerintah, dengan kontrol yang ketat terhadap 
+                nilai dan distribusinya.
+            </p>
+            <p>
+                Bitcoin hadir dengan janji sistem keuangan yang terdesentralisasi, di mana tidak ada pihak tunggal yang memiliki kendali penuh atas aset 
+                digital ini. Namun, Bitcoin juga menghadapi banyak tantangan di seluruh dunia. Regulasi yang berubah-ubah, volatilitas yang sangat tinggi, 
+                dan kurangnya pemahaman umum tentang teknologi blockchain yang mendasarinya telah memperlambat adopsi Bitcoin sebagai mata uang utama. 
+                Sementara itu, banyak pemerintah khawatir bahwa penggunaan Bitcoin dapat mempermudah transaksi ilegal, seperti pencucian uang dan pendanaan 
+                terorisme, yang tidak bisa terdeteksi dengan mudah oleh otoritas keuangan.
+            </p>
+            <p>
+                Di sisi lain, para pendukung setia Bitcoin menegaskan bahwa ini adalah inovasi terbesar di bidang keuangan sejak munculnya internet. Mereka 
+                percaya bahwa Bitcoin dapat memotong perantara tradisional seperti bank dan lembaga keuangan, serta memberikan kebebasan finansial kepada 
+                individu di seluruh dunia, terutama bagi mereka yang berada di negara-negara berkembang. Bagi mereka, Bitcoin bukan hanya mata uang digital, 
+                tetapi juga gerakan sosial yang mengutamakan privasi, kedaulatan individu, dan desentralisasi.
+            </p>
+            <p>
+                Namun, dengan volatilitas yang ekstrem, masa depan Bitcoin masih jauh dari pasti. Beberapa analis percaya bahwa Bitcoin pada akhirnya akan 
+                terintegrasi dengan sistem keuangan tradisional, sementara yang lain meramalkan bahwa Bitcoin mungkin tidak akan pernah menjadi alat pembayaran 
+                yang benar-benar stabil. Tantangan terbesar yang dihadapi Bitcoin adalah bagaimana ia dapat beradaptasi dan bertahan di tengah perubahan 
+                regulasi yang semakin ketat dari pemerintah di seluruh dunia.
+            </p>
+        </div>
+
+        <!-- News 2 -->
+        <div id="news-2" data-title="Prabowo dan Gibran: Era Politik Baru di Indonesia" data-author="Rahmawati Sari" data-date="12 Oktober 2024">
+            <img src="images/prabowo.jpg" alt="Prabowo dan Gibran">
+            <p>
+                Indonesia, negara demokrasi terbesar di Asia Tenggara, menghadapi pergeseran politik yang menarik perhatian dunia internasional. Pada tahun 
+                2024, Prabowo Subianto, mantan komandan militer dan kandidat presiden, menggandeng Gibran Rakabuming Raka, putra Presiden Joko Widodo, 
+                sebagai pasangan politiknya. Langkah ini mencerminkan perubahan besar dalam dinamika politik nasional, di mana generasi muda mulai memainkan 
+                peran penting dalam pemerintahan.
+            </p>
+            <p>
+                Kemitraan antara Prabowo dan Gibran dianggap oleh banyak pihak sebagai strategi politik yang cerdas. Gibran, dengan citra mudanya yang segar 
+                dan inovatif, diharapkan dapat menarik suara generasi milenial, sementara Prabowo yang sudah berpengalaman akan menjaga basis pemilih 
+                konservatif. Bersama-sama, mereka menyampaikan visi tentang masa depan Indonesia yang lebih kuat, lebih mandiri, dan lebih berdaya saing di 
+                panggung global.
+            </p>
+            <p>
+                Di sisi lain, Prabowo telah lama dikenal sebagai tokoh kontroversial dalam politik Indonesia, dengan masa lalunya yang terkait erat dengan 
+                militer dan peristiwa-peristiwa kelam di era Reformasi. Banyak yang mempertanyakan apakah kemitraan dengan Gibran, yang diasosiasikan dengan 
+                politik bersih dan progresif, adalah upaya Prabowo untuk memperbaiki citranya di mata publik yang lebih muda. Sebaliknya, Gibran menghadapi 
+                tantangan untuk membuktikan bahwa dirinya tidak hanya 'mengendarai' nama besar ayahnya, tetapi juga memiliki kapasitas politik yang nyata.
+            </p>
+            <p>
+                Dalam konteks ini, tahun 2024 diprediksi akan menjadi salah satu momen paling penting dalam sejarah politik Indonesia, di mana generasi lama 
+                dan baru bersatu untuk menciptakan perubahan yang diharapkan dapat membawa negara ini ke arah yang lebih baik. Bagaimana peran Gibran dalam 
+                peta politik yang lebih luas masih harus dilihat, tetapi kolaborasinya dengan Prabowo memberikan indikasi bahwa politik Indonesia sedang 
+                memasuki babak baru yang dinamis.
+            </p>
+        </div>
+
+        <!-- News 3 -->
+        <div id="news-3" data-title="Bear Market Menyerang: Apa yang Terjadi?" data-author="Mark Davis" data-date="11 Oktober 2024">
+            <img src="images/bearmarket.jpg" alt="Bear Market">
+            <p>
+                Pasar cryptocurrency sedang menghadapi masa sulit yang dikenal dengan istilah bear market, di mana harga-harga koin digital mengalami 
+                penurunan yang signifikan. Situasi ini telah mengguncang kepercayaan banyak investor, terutama mereka yang baru saja terjun ke dunia 
+                cryptocurrency. Penurunan ini juga dipicu oleh berbagai faktor eksternal, seperti ketidakstabilan ekonomi global dan regulasi yang lebih 
+                ketat di beberapa negara.
+            </p>
+            <p>
+                Banyak analis percaya bahwa bear market ini merupakan bagian alami dari siklus pasar. Namun, untuk industri yang masih baru seperti 
+                cryptocurrency, dampaknya terasa lebih dramatis. Banyak proyek blockchain dan startup terkait kripto terpaksa menutup operasinya karena 
+                kurangnya dana dan dukungan dari investor. Ini menyebabkan kekhawatiran lebih lanjut tentang keberlanjutan industri ini.
+            </p>
+            <p>
+                Meskipun demikian, para pendukung setia cryptocurrency tetap optimis. Mereka percaya bahwa bear market adalah peluang untuk melakukan 
+                konsolidasi dan pengembangan teknologi yang lebih baik. Sementara itu, para investor baru diingatkan untuk bersikap hati-hati dan tidak 
+                terburu-buru dalam mengambil keputusan investasi. Pasar cryptocurrency selalu penuh dengan ketidakpastian, tetapi juga dengan peluang yang 
+                tak terduga.
+            </p>
+        </div>
+
+        <!-- News 4 -->
+        <div id="news-4" data-title="Persatuan dan Kemenangan: Para Pemimpin Rayakan" data-author="Sarah Williams" data-date="10 Oktober 2024">
+            <img src="images/leaders.jpg" alt="Para Pemimpin">
+            <p>
+                Dalam perayaan yang penuh dengan simbol persatuan dan kemenangan, para pemimpin dari berbagai negara berkumpul untuk merayakan tonggak 
+                penting dalam sejarah dunia modern. Acara ini, yang diadakan di salah satu ibu kota paling berpengaruh di dunia, menghadirkan tokoh-tokoh 
+                politik, bisnis, dan masyarakat sipil dari seluruh penjuru dunia.
+            </p>
+            <p>
+                Fokus utama dari perayaan ini adalah memperkuat kerjasama internasional dalam menghadapi tantangan global, seperti perubahan iklim, 
+                ketidaksetaraan ekonomi, dan krisis kesehatan global. Dalam pidatonya, para pemimpin menekankan pentingnya solidaritas dan komitmen bersama 
+                untuk menciptakan dunia yang lebih baik bagi generasi mendatang.
+            </p>
+            <p>
+                Perayaan ini tidak hanya sekedar seremoni. Ini adalah peringatan akan pentingnya kolaborasi lintas batas untuk mengatasi isu-isu yang tidak 
+                bisa diselesaikan oleh satu negara saja. Dengan semangat persatuan, para pemimpin berharap bisa membangun masa depan yang lebih adil, damai, 
+                dan sejahtera untuk semua.
+            </p>
+        </div>
+
+        <!-- News 5 -->
+        <div id="news-5" data-title="AC Milan Resmi Merekrut Tammy Abraham" data-author="Luca Bianchi" data-date="9 Oktober 2024">
+            <img src="images/acmilan.jpg" alt="AC Milan dan Tammy Abraham">
+            <p>
+                Klub sepak bola Italia, AC Milan, dengan bangga mengumumkan perekrutan bintang baru mereka, Tammy Abraham. Striker muda berbakat ini diharapkan 
+                untuk membawa dampak besar di Serie A dan menjadi salah satu pemain kunci dalam upaya AC Milan untuk memenangkan gelar liga.
+            </p>
+            <p>
+                Tammy Abraham, yang sebelumnya bermain untuk AS Roma dan Chelsea, telah menunjukkan kemampuannya sebagai pencetak gol ulung. Dengan kecepatan, 
+                teknik, dan kemampuan penyelesaian yang luar biasa, Abraham telah menarik perhatian klub-klub top Eropa. Namun, AC Milan berhasil memenangkan 
+                perlombaan untuk mendapatkan tanda tangannya.
+            </p>
+            <p>
+                Pelatih dan para penggemar AC Milan sangat antusias menyambut kedatangannya. Mereka berharap bahwa dengan kehadiran Abraham, lini serang 
+                AC Milan akan semakin kuat, membawa klub ini kembali ke kejayaan seperti di era 1990-an. Akankah Abraham memenuhi ekspektasi tinggi ini? 
+                Waktu yang akan menjawab.
+            </p>
+        </div>
+
+        <!-- News 6 -->
+        <div id="news-6" data-title="Mata Uang Kripto vs Mata Uang Tradisional" data-author="Ms. Alice" data-date="8 Oktober 2024">
+            <img src="images/crypto.jpg" alt="Mata Uang Kripto">
+            <p>
+                Perdebatan mengenai keunggulan mata uang kripto dibandingkan dengan mata uang tradisional semakin memanas. Banyak ahli keuangan percaya bahwa 
+                kripto akan memainkan peran penting di masa depan, sementara yang lain tetap skeptis terhadap stabilitasnya.
+            </p>
+            <p>
+                Sementara itu, pemerintah di berbagai negara mulai menerapkan regulasi yang lebih ketat untuk mengontrol penggunaan kripto, terutama terkait 
+                dengan keamanan dan potensi pencucian uang. Namun, para pendukung kripto yakin bahwa desentralisasi adalah kunci masa depan keuangan yang lebih 
+                terbuka dan adil.
+            </p>
+        </div>
+
+        <!-- News 7 -->
+        <div id="news-7" data-title="Prabowo Subianto: Kebijakan Pertahanan untuk Masa Depan" data-author="Author 7" data-date="7 Oktober 2024">
+            <img src="images/prabowo-defense.jpg" alt="Prabowo Subianto">
+            <p>
+                Dalam sebuah konferensi pers yang berlangsung di Jakarta, Menteri Pertahanan Prabowo Subianto memaparkan visi besar mengenai kebijakan pertahanan 
+                Indonesia yang diarahkan untuk masa depan yang lebih aman dan terjamin. Di hadapan ratusan undangan dari kalangan militer, politikus, hingga ahli 
+                strategi, Prabowo menekankan pentingnya memperkuat ketahanan nasional dalam menghadapi tantangan global yang semakin kompleks dan beragam.
+            </p>
+            <p>
+                Salah satu poin utama dari kebijakan yang ditekankan oleh Prabowo adalah perlunya modernisasi peralatan militer Indonesia. Ia mengungkapkan bahwa 
+                anggaran pertahanan yang cukup besar telah dialokasikan untuk pembelian teknologi-teknologi militer mutakhir, termasuk drone militer, kendaraan tempur 
+                lapis baja, serta sistem radar dan komunikasi canggih. Prabowo juga menyoroti pentingnya memperkuat kerjasama internasional dengan negara-negara mitra 
+                untuk menghadapi ancaman bersama, seperti terorisme global dan penyelundupan narkoba lintas batas.
+            </p>
+            <p>
+                Tidak hanya fokus pada peralatan fisik, Prabowo juga mengingatkan bahwa ancaman siber menjadi salah satu tantangan baru yang harus dihadapi. Indonesia, 
+                sebagai salah satu negara dengan pengguna internet terbesar di dunia, rentan terhadap serangan siber yang dapat melumpuhkan infrastruktur vital, seperti 
+                jaringan listrik dan sistem komunikasi. Oleh karena itu, Prabowo berkomitmen untuk meningkatkan kemampuan pertahanan siber Indonesia melalui pelatihan 
+                intensif dan kolaborasi dengan para ahli teknologi global.
+            </p>
+            <p>
+                Dalam paparannya, Prabowo juga tidak lupa membahas pentingnya peran diplomasi dalam menjaga perdamaian. Ia menekankan bahwa meskipun militer harus 
+                selalu siap, namun diplomasi tetap menjadi garis pertahanan pertama dalam menghindari konflik. Dengan visi yang matang, Prabowo berharap Indonesia 
+                bisa menjadi kekuatan regional yang mampu menjaga stabilitas di Asia Tenggara.
+            </p>
+        </div>
+
+        <!-- News 8 -->
+        <div id="news-8" data-title="Krisis Pasar Saham Global: Apa yang Sebenarnya Terjadi?" data-author="David Anderson" data-date="6 Oktober 2024">
+            <img src="images/stockmarket.jpg" alt="Krisis Pasar Saham">
+            <p>
+                Krisis pasar saham yang melanda dunia saat ini adalah salah satu yang terbesar dalam sejarah modern, dengan banyak pasar utama di seluruh dunia 
+                mengalami penurunan tajam dalam waktu singkat. Banyak investor yang merasa panik dan menarik uang mereka dari pasar saham, sementara para 
+                analis berusaha untuk memahami apa yang sebenarnya memicu kekacauan ini.
+            </p>
+            <p>
+                Salah satu faktor utama yang berkontribusi terhadap krisis ini adalah inflasi global yang melonjak drastis dalam beberapa bulan terakhir. Biaya 
+                hidup yang meningkat secara signifikan di berbagai negara telah mempengaruhi daya beli masyarakat, yang kemudian berdampak pada penurunan pendapatan 
+                perusahaan-perusahaan besar. Selain itu, konflik geopolitik yang berlarut-larut, seperti ketegangan antara Amerika Serikat dan China, serta perang 
+                di beberapa kawasan Timur Tengah, turut memperburuk kondisi pasar.
+            </p>
+            <p>
+                Ekonom senior dari berbagai institusi besar memberikan prediksi beragam mengenai berapa lama krisis ini akan berlangsung. Ada yang berpendapat bahwa 
+                krisis ini hanya akan berlangsung dalam waktu singkat, sebagai koreksi alami dari pasar yang sudah mengalami overvaluasi dalam beberapa tahun terakhir. 
+                Namun, ada juga yang memperkirakan bahwa kita mungkin akan melihat resesi global besar-besaran, yang bisa berlangsung hingga beberapa tahun mendatang.
+            </p>
+            <p>
+                Dalam menghadapi situasi ini, para investor disarankan untuk berhati-hati dan tidak terburu-buru mengambil keputusan. Meskipun penurunan harga saham 
+                bisa menjadi kesempatan untuk membeli aset dengan harga yang lebih murah, risiko volatilitas tetap sangat tinggi. Banyak yang berharap bahwa krisis ini 
+                akan berakhir dengan intervensi kebijakan moneter dari bank sentral di berbagai negara, yang akan membantu menstabilkan perekonomian global.
+            </p>
+        </div>
+
+        <!-- News 9 -->
+        <div id="news-9" data-title="ASS Koin: Meme Koin Terbaru yang Mengguncang Dunia Kripto" data-author="Evan Carter" data-date="5 Oktober 2024">
+            <img src="images/asscoin.jpg" alt="ASS Koin">
+            <p>
+                Dunia cryptocurrency sekali lagi dikejutkan oleh munculnya sebuah meme koin baru yang viral, kali ini dengan nama yang tidak biasa: ASS Koin. Koin 
+                ini terinspirasi dari cuitan Elon Musk yang kontroversial tentang aset kripto berbasis meme, yang sebelumnya telah melambungkan Dogecoin dan Shiba 
+                Inu ke popularitas global. Namun, ASS Koin mengambil pendekatan yang lebih unik dan provokatif, dengan tema yang didasarkan pada "meme culture" yang 
+                berkembang pesat di internet.
+            </p>
+            <p>
+                Dalam beberapa minggu setelah peluncurannya, ASS Koin mengalami lonjakan harga yang sangat signifikan, menarik perhatian para investor kripto di seluruh 
+                dunia. Meski awalnya dianggap sebagai lelucon, banyak orang yang mulai melihat potensi profit dari koin ini, yang mendorong volume perdagangan menjadi 
+                sangat tinggi dalam waktu singkat. Namun, seperti halnya semua koin berbasis meme, volatilitas harga ASS Koin sangat tinggi, dengan fluktuasi harian 
+                yang bisa mencapai puluhan persen.
+            </p>
+            <p>
+                Para ahli kripto memperingatkan bahwa investasi di meme koin seperti ASS Koin memiliki risiko yang sangat besar. Sementara beberapa orang mungkin 
+                mendapatkan keuntungan besar dalam jangka pendek, ada juga risiko kerugian yang sangat tinggi. Tidak seperti Bitcoin atau Ethereum yang memiliki 
+                fundamental teknologi yang kuat, meme koin biasanya tidak memiliki nilai intrinsik yang jelas dan sering kali hanya didorong oleh spekulasi pasar.
+            </p>
+            <p>
+                Meskipun demikian, tidak dapat dipungkiri bahwa fenomena meme koin seperti ASS Koin mencerminkan bagaimana internet dan media sosial telah mengubah 
+                wajah pasar keuangan modern. Apakah ASS Koin akan bertahan dan menjadi koin yang lebih stabil di masa depan, atau hanya akan menjadi tren sesaat 
+                yang segera dilupakan, masih menjadi pertanyaan besar.
+            </p>
+        </div>
+
+        <!-- News 10 -->
+        <div id="news-10" data-title="Bendera Pelangi di Lapangan: Kontroversi dalam Dunia Sepak Bola" data-author="John Smith" data-date="4 Oktober 2024">
+            <img src="images/rainbowflag.jpg" alt="Bendera Pelangi">
+            <p>
+                Bendera pelangi, simbol yang dikenal sebagai lambang solidaritas terhadap komunitas LGBTQ+, telah menjadi bagian dari perdebatan sengit dalam 
+                dunia sepak bola internasional. Pada beberapa pertandingan penting, pemain dan penggemar terlihat mengibarkan bendera pelangi sebagai bentuk 
+                dukungan terhadap hak-hak LGBTQ+, namun tidak semua pihak menerima gerakan ini dengan baik.
+            </p>
+            <p>
+                Beberapa federasi sepak bola, termasuk FIFA, menghadapi dilema antara mendukung kebebasan berekspresi dan menjaga netralitas politik di lapangan. 
+                Di beberapa negara dengan hukum yang tidak mendukung hak-hak LGBTQ+, tindakan seperti membawa bendera pelangi dianggap sebagai pelanggaran terhadap 
+                nilai-nilai sosial setempat. Akibatnya, para pemain yang menunjukkan dukungan terhadap gerakan LGBTQ+ sering kali menghadapi kritik, baik dari publik 
+                maupun otoritas setempat.
+            </p>
+            <p>
+                Di sisi lain, banyak kelompok hak asasi manusia mendukung penuh penggunaan simbol pelangi di pertandingan olahraga sebagai cara untuk mempromosikan 
+                inklusivitas dan melawan diskriminasi. Mereka berpendapat bahwa olahraga, termasuk sepak bola, harus menjadi tempat di mana semua orang merasa diterima 
+                tanpa memandang latar belakang, orientasi seksual, atau identitas gender mereka.
+            </p>
+            <p>
+                FIFA sendiri telah menyatakan bahwa mereka mendukung kebebasan berekspresi di dalam olahraga, tetapi juga menekankan pentingnya menghormati peraturan 
+                dan hukum yang berlaku di negara tuan rumah. Debat ini kemungkinan akan terus berlanjut di masa depan, terutama dengan semakin banyaknya acara olahraga 
+                besar yang diadakan di negara-negara dengan pandangan konservatif terhadap hak-hak LGBTQ+.
+            </p>
+        </div>
+
+        <!-- News 11 -->
+        <div id="news-11" data-title="Scarlet Macaw: Penampakan Langka di Jantung Hutan Amazon" data-author="Maria Lopez" data-date="3 Oktober 2024">
+            <img src="images/scarletmacaw.jpg" alt="Scarlet Macaw">
+            <p>
+                Scarlet Macaw, salah satu burung paling ikonik di dunia, baru-baru ini terlihat kembali di hutan hujan Amazon setelah beberapa dekade absen dari 
+                pandangan publik. Burung dengan bulu berwarna-warni ini terkenal karena keindahannya dan sering kali menjadi simbol konservasi alam di kawasan 
+                tropis. Namun, karena perburuan liar dan kerusakan habitat, populasi burung ini mengalami penurunan drastis, membuat penampakannya menjadi semakin langka.
+            </p>
+            <p>
+                Para ahli konservasi sangat senang dengan kabar penampakan terbaru ini, karena hal ini menunjukkan bahwa upaya-upaya pelestarian di Amazon mulai 
+                membuahkan hasil. Dalam beberapa tahun terakhir, sejumlah inisiatif telah diluncurkan untuk melindungi hutan Amazon dari pembalakan liar dan 
+                deforestasi yang mengancam keanekaragaman hayati. Scarlet Macaw menjadi salah satu spesies yang paling dilindungi dalam program-program ini.
+            </p>
+            <p>
+                Meskipun demikian, tantangan besar masih menghadang. Deforestasi yang terus berlangsung, terutama untuk keperluan pertanian dan pertambangan, 
+                tetap menjadi ancaman utama bagi kelangsungan hidup Scarlet Macaw dan spesies lainnya di Amazon. Beberapa organisasi internasional mendesak 
+                pemerintah untuk mengambil langkah lebih tegas dalam menegakkan hukum dan memberikan sanksi terhadap aktivitas-aktivitas yang merusak hutan.
+            </p>
+            <p>
+                Bagi para wisatawan yang tertarik dengan ekowisata, penampakan Scarlet Macaw ini juga menjadi daya tarik tersendiri. Banyak turis yang datang ke 
+                Amazon berharap bisa melihat langsung burung langka ini di habitat aslinya. Dengan upaya pelestarian yang berkelanjutan, diharapkan generasi 
+                mendatang masih dapat menikmati keindahan Scarlet Macaw dan kekayaan alam Amazon yang luar biasa.
+            </p>
+        </div>
+
+        <!-- News 12 -->
+        <div id="news-12" data-title="Black Myth: Wukong - Game yang Mengubah Industri" data-author="Yao Chen" data-date="2 Oktober 2024">
+            <img src="images/wukong.jpg" alt="Black Myth: Wukong">
+            <p>
+                Dunia gaming terus berkembang, dan salah satu game yang paling dinanti pada tahun 2024 adalah "Black Myth: Wukong". Game ini diadaptasi dari 
+                mitologi klasik China, khususnya cerita tentang Sun Wukong, si Raja Kera. Dengan grafis yang luar biasa dan gameplay yang inovatif, "Black 
+                Myth: Wukong" dengan cepat menarik perhatian penggemar game di seluruh dunia dan dinobatkan sebagai salah satu game paling menjanjikan tahun ini.
+            </p>
+            <p>
+                Apa yang membuat "Black Myth: Wukong" istimewa adalah bagaimana game ini berhasil menggabungkan elemen mitologi dengan aksi yang mendebarkan. 
+                Pemain akan dibawa ke dalam dunia yang penuh dengan monster legendaris, dewa-dewi, dan tantangan epik yang terinspirasi dari cerita rakyat 
+                China kuno. Sun Wukong, dengan kekuatan dan kelicikannya, menjadi karakter utama yang harus menghadapi berbagai rintangan dalam usahanya untuk 
+                mencapai keabadian.
+            </p>
+            <p>
+                Tidak hanya menawarkan visual yang memukau, "Black Myth: Wukong" juga berhasil mempopulerkan budaya China di kalangan pemain game internasional. 
+                Banyak yang memuji game ini karena keberhasilannya dalam mengangkat elemen-elemen budaya Asia yang sebelumnya jarang diangkat oleh developer 
+                game barat. Ini membuka pintu bagi lebih banyak game berbasis mitologi dan sejarah Asia yang akan datang.
+            </p>
+            <p>
+                Namun, kesuksesan "Black Myth: Wukong" tidak datang tanpa tantangan. Pengembang game ini menghadapi tekanan besar untuk memenuhi ekspektasi 
+                tinggi dari para pemain. Mereka harus memastikan bahwa gameplay tetap menarik, alur cerita memikat, dan pengalaman bermain secara keseluruhan 
+                memuaskan. Dengan tanggal rilis yang semakin dekat, semua mata kini tertuju pada game ini, dan para penggemar berharap "Black Myth: Wukong" 
+                akan menjadi game yang revolusioner di industri gaming.
+            </p>
+        </div>
+
+        <!-- News 13 -->
+        <div id="news-13" data-title="Putin: Politik Kekuatan di Tengah Krisis Global" data-author="David Anderson" data-date="1 Oktober 2024">
+            <img src="images/putin.jpg" alt="Putin">
+            <p>
+                Presiden Rusia, Vladimir Putin, terus memegang kendali atas politik luar negeri negaranya di tengah krisis global yang semakin memanas. 
+                Dengan berbagai tantangan yang dihadapi dunia, mulai dari konflik bersenjata hingga ancaman nuklir, Putin tetap teguh pada kebijakan luar 
+                negeri yang keras dan tidak kenal kompromi. Rusia, di bawah kepemimpinan Putin, terus berupaya untuk memperkuat pengaruhnya di panggung 
+                internasional, terutama di kawasan-kawasan strategis seperti Eropa Timur, Timur Tengah, dan Asia Tengah.
+            </p>
+            <p>
+                Salah satu langkah terbaru yang diambil oleh Putin adalah mempererat hubungan dengan sekutu-sekutu tradisional Rusia, seperti China dan Iran. 
+                Kerjasama ekonomi dan militer antara negara-negara ini telah meningkat pesat dalam beberapa tahun terakhir, dan banyak analis percaya bahwa 
+                aliansi ini merupakan respon langsung terhadap sanksi ekonomi yang dikenakan oleh negara-negara barat. Putin, dalam berbagai pidatonya, 
+                sering kali menekankan bahwa Rusia tidak akan tunduk pada tekanan dari luar dan akan terus mempertahankan kedaulatannya di tengah ancaman global.
+            </p>
+            <p>
+                Namun, di tengah krisis ini, Putin juga menghadapi kritik dari dalam negeri. Beberapa kelompok oposisi menuduh bahwa kebijakan luar negeri yang 
+                agresif telah merugikan ekonomi domestik Rusia. Sanksi ekonomi yang diberlakukan oleh barat telah memukul keras sektor-sektor vital di Rusia, 
+                termasuk energi dan teknologi. Meski begitu, Putin masih mendapat dukungan kuat dari mayoritas rakyat Rusia, yang melihatnya sebagai pemimpin 
+                yang mampu mempertahankan kehormatan dan martabat negara di tengah tekanan internasional.
+            </p>
+            <p>
+                Di panggung global, Vladimir Putin tetap menjadi salah satu tokoh politik paling berpengaruh dan kontroversial. Apakah ia akan mampu 
+                mempertahankan posisinya di tengah tekanan yang semakin meningkat, atau apakah krisis global ini akan menjadi titik balik dalam karir 
+                politiknya, masih menjadi pertanyaan besar yang menunggu jawaban.
+            </p>
+        </div>
+
+        <!-- News 14 -->
+        <div id="news-14" data-title="Liburan Tropis: Surga yang Menanti di Tengah Lautan" data-author="Maria Lopez" data-date="30 September 2024">
+            <img src="images/tropics.jpg" alt="Pulau Tropis">
+            <p>
+                Saat musim liburan tiba, banyak orang mencari tempat-tempat eksotis untuk melepaskan diri dari kesibukan kota. Salah satu destinasi yang 
+                selalu menjadi favorit adalah pulau-pulau tropis yang tersebar di seluruh dunia. Dengan pantai-pantai berpasir putih, air laut yang jernih, 
+                dan pepohonan kelapa yang melambai-lambai, pulau tropis menawarkan pengalaman liburan yang benar-benar menenangkan jiwa.
+            </p>
+            <p>
+                Destinasi seperti Maladewa, Bora Bora, dan Seychelles telah lama dikenal sebagai surga dunia, tempat di mana para wisatawan dapat menikmati 
+                ketenangan dan kemewahan dalam satu paket. Bagi mereka yang ingin bersantai di pantai atau menjelajahi terumbu karang, pulau-pulau ini menyediakan 
+                segala sesuatu yang dibutuhkan untuk liburan yang sempurna. Hotel-hotel mewah dengan layanan kelas dunia, spa yang memanjakan, serta berbagai 
+                aktivitas air seperti snorkeling, diving, dan berselancar, semuanya tersedia untuk memuaskan keinginan pelancong.
+            </p>
+            <p>
+                Namun, liburan di pulau tropis bukan hanya soal kemewahan. Bagi para pecinta alam, pulau-pulau tropis juga menawarkan keanekaragaman hayati yang 
+                luar biasa. Hutan hujan, laguna tersembunyi, dan satwa liar yang eksotis menanti untuk dijelajahi. Banyak wisatawan yang datang untuk melihat 
+                spesies-spesies langka, seperti penyu laut, ikan tropis yang berwarna-warni, dan bahkan lumba-lumba liar.
+            </p>
+            <p>
+                Liburan di pulau tropis juga menjadi kesempatan untuk terhubung kembali dengan alam dan merasakan kedamaian yang sulit didapatkan di kota-kota besar. 
+                Dengan suasana yang begitu tenang dan pemandangan yang menakjubkan, tidak heran jika banyak orang yang menyebut pulau tropis sebagai surga dunia yang 
+                sesungguhnya. Bagi mereka yang mencari pelarian dari hiruk pikuk kehidupan sehari-hari, pulau-pulau ini adalah pilihan yang sempurna.
+            </p>
+        </div>
+
+        <!-- News 15 -->
+        <div id="news-15" data-title="Masa Depan Teknologi: Inovasi yang Mengubah Dunia" data-author="Tech Innovations" data-date="29 September 2024">
+            <img src="images/technology.jpg" alt="Teknologi Masa Depan">
+            <p>
+                Teknologi terus berkembang dengan kecepatan yang luar biasa, membawa inovasi-inovasi yang tidak hanya mengubah cara kita hidup, tetapi juga 
+                membuka jalan untuk masa depan yang lebih canggih dan efisien. Dalam beberapa dekade terakhir, kita telah menyaksikan perkembangan pesat dalam 
+                bidang-bidang seperti kecerdasan buatan (AI), internet of things (IoT), blockchain, dan teknologi medis yang telah mengubah banyak sektor 
+                industri di seluruh dunia.
+            </p>
+            <p>
+                Salah satu inovasi terbesar yang diperkirakan akan semakin berkembang dalam beberapa tahun ke depan adalah kecerdasan buatan. AI telah 
+                berhasil diterapkan dalam berbagai bidang, mulai dari layanan pelanggan hingga pengolahan data besar, dan terus menjadi topik hangat di kalangan 
+                peneliti dan praktisi teknologi. Dengan kemampuannya yang luar biasa untuk memproses informasi dalam jumlah besar secara real-time, AI diperkirakan 
+                akan menjadi teknologi yang mendominasi di masa depan.
+            </p>
+            <p>
+                Selain itu, teknologi blockchain juga diperkirakan akan memainkan peran penting dalam mendefinisikan ulang cara kita bertransaksi dan berkomunikasi. 
+                Blockchain tidak hanya menawarkan keamanan dan transparansi yang lebih baik dalam transaksi keuangan, tetapi juga membuka peluang untuk inovasi dalam 
+                bidang seperti logistik, kesehatan, dan pemerintahan. Banyak perusahaan teknologi besar yang kini berlomba-lomba untuk mengembangkan solusi berbasis 
+                blockchain yang dapat diimplementasikan di skala global.
+            </p>
+            <p>
+                Namun, dengan semua kemajuan teknologi ini, tantangan-tantangan baru juga muncul. Salah satu isu terbesar yang harus dihadapi adalah privasi dan 
+                keamanan data. Dengan semakin banyaknya informasi pribadi yang disimpan dan diproses oleh mesin, risiko kebocoran data dan serangan siber menjadi 
+                semakin besar. Oleh karena itu, penting bagi para pengembang teknologi untuk selalu memikirkan cara-cara yang inovatif dalam menjaga keamanan data 
+                dan privasi pengguna.
+            </p>
+            <p>
+                Inovasi-inovasi teknologi yang kita lihat hari ini hanyalah puncak gunung es. Di masa depan, kita dapat berharap untuk melihat lebih banyak lagi 
+                penemuan-penemuan yang akan mengubah cara kita bekerja, berkomunikasi, dan hidup. Masa depan teknologi adalah masa depan yang penuh dengan 
+                potensi dan tantangan, dan dunia harus siap untuk menghadapi perubahan-perubahan yang akan datang.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- JavaScript untuk memuat konten berita -->
+    <script src="js/news_page.js"></script>
+</body>
+</html>

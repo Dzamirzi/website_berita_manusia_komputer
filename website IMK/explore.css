@@ -1,0 +1,215 @@
+/* Gaya untuk search bar dengan ikon pencarian di kanan */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 80%; /* Menambah panjang search bar menjadi 80% dari lebar layar */
+    margin: 0 auto; /* Menempatkan search bar di tengah */
+    border: 1px solid #ccc; /* Border tipis mengelilingi search bar */
+    border-radius: 25px; /* Bentuk melingkar penuh */
+    padding: 5px;
+    background-color: white; /* Background putih */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+}
+
+.search-bar input {
+    border: none; /* Hilangkan border default pada input */
+    padding: 10px;
+    width: 90%; /* Mengatur input agar lebih panjang */
+    border-radius: 25px; /* Bentuk melingkar */
+    font-size: 16px;
+    padding-left: 20px;
+    outline: none; /* Hilangkan outline biru pada klik */
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Hilangkan highlight biru pada input */
+.search-bar input:focus {
+    outline: none;
+    box-shadow: none; /* Hilangkan shadow saat fokus */
+}
+
+/* Kategori berita */
+.category-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.category-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-btn:hover {
+    background-color: #ddd;
+}
+
+/* Artikel Trending */
+.trending-section {
+    margin: 40px 0;
+}
+
+.trending-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.trending-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trending-item {
+    width: 300px;
+    text-align: center;
+}
+
+.trending-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.trending-item h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Rekomendasi Artikel */
+.recommendation-section {
+    margin: 40px 0;
+}
+
+.recommendation-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recommendation-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recommendation-item {
+    width: 300px;
+    text-align: center;
+}
+
+.recommendation-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recommendation-item h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .search-bar input {
+        width: 80%;
+    }
+
+    .trending-item, .recommendation-item {
+        width: 100%;
+    }
+}
+
+/* Normal Mode Styling */
+body, 
+body * {
+    color: #000 !important; /* Mengatur seluruh teks berwarna hitam */
+    text-decoration: none !important; /* Menghilangkan semua garis bawah */
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Menambahkan styling agar semua teks otomatis berwarna putih dan tanpa garis bawah di dark mode */
+.dark-mode, 
+.dark-mode * {
+    color: #fff !important; /* Mengatur agar semua teks berwarna putih */
+    text-decoration: none !important; /* Menghilangkan semua garis bawah */
+}
+
+.dark-mode .search-bar {
+    background-color: #444;
+    border: 1px solid #555;
+}
+
+.dark-mode .search-bar input {
+    background-color: #555;
+    color: white;
+}
+
+.dark-mode .search-bar button img {
+    filter: invert(100%);
+}
+
+.dark-mode .category-btn {
+    background-color: #444;
+    border: 1px solid #555;
+    color: white;
+}
+
+.dark-mode .category-btn:hover {
+    background-color: #555;
+}
+
+.dark-mode .trending-item, .dark-mode .recommendation-item {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode .trending-item h3, .dark-mode .recommendation-item h3 {
+    color: white;
+}
+
+.dark-mode .trending-section h2, .dark-mode .recommendation-section h2 {
+    color: white;
+}
+
+.dark-mode .category-section h2 {
+    color: white;
+}
+
+/* Hilangkan highlight pada input saat fokus di Dark Mode */
+.dark-mode .search-bar input:focus {
+    box-shadow: none;
+}

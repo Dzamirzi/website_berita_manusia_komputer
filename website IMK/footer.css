@@ -1,0 +1,60 @@
+/* Container utama untuk footer */
+.footer-container {
+    display: flex; /* Tata letak fleksibel (flexbox) untuk icon */
+    justify-content: space-between; /* Jarak antar icon sama rata */
+    background-color: #cdcdcd; /* Warna latar belakang footer */
+    padding: 10px 0; /* Jarak atas dan bawah */
+    position: fixed; /* Menempelkan footer di bagian bawah layar */
+    bottom: 0;
+    left: 0;
+    right: 0; /* Membuat footer memenuhi lebar layar */
+    width: 100%; /* Footer dengan lebar penuh */
+    z-index: 1000; /* Memastikan footer berada di atas elemen lain */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Bayangan di atas footer */
+}
+
+/* Gambar icon di footer */
+.footer-item img {
+    width: 24px; /* Lebar icon */
+    height: 24px; /* Tinggi icon */
+    opacity: 0.3; /* Default opacity lebih transparan */
+    transition: opacity 0.3s ease; /* Transisi halus saat dihover */
+    filter: none !important; /* Menghapus filter dari dark mode */
+}
+
+/* Efek hover untuk icon di footer */
+.footer-item img:hover {
+    opacity: 0.6; /* Opacity saat di-hover lebih jelas */
+}
+
+/* Mengatur tampilan setiap item di footer */
+.footer-item {
+    text-align: center; /* Pusatkan icon */
+    flex: 1; /* Membuat setiap icon mengambil ruang yang sama */
+}
+
+/* Highlight icon halaman yang sedang aktif */
+.footer-item.active img {
+    opacity: 1; /* Opacity penuh untuk halaman yang aktif */
+}
+
+/* Tambahkan padding bawah pada body agar konten tidak tertutup oleh footer */
+body {
+    padding-bottom: 60px; /* Memberi ruang agar konten tidak tertutup oleh footer */
+}
+
+/* Pastikan dark mode tidak mengubah icon di footer */
+.dark-mode .footer-item img {
+    filter: none !important; /* Pastikan tidak ada perubahan warna pada icon */
+    opacity: 0.3; /* Kembali ke opacity default */
+}
+
+/* Hover efek di dark mode tetap bekerja */
+.dark-mode .footer-item img:hover {
+    opacity: 0.6;
+}
+
+/* Active state untuk dark mode tetap bekerja */
+.dark-mode .footer-item.active img {
+    opacity: 1;
+}

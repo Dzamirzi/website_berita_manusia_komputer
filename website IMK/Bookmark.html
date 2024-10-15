@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Page</title>
+    <link rel="stylesheet" href="Bookmark.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <!-- Placeholder untuk header -->
+    <div id="header-placeholder"></div>
+    
+    <!-- Judul Bookmark -->
+    <h1 class="page-title">Bookmark</h1>
+
+    <!-- Artikel akan ditampilkan di sini -->
+    <main id="articles">
+        <!-- Artikel akan dimuat secara dinamis menggunakan JavaScript -->
+    </main>
+
+    <!-- Pagination untuk berpindah halaman -->
+    <nav class="pagination">
+        <button class="pagination-btn prev" id="prevBtn">
+            <img src="icon/prev (1).png" alt="Previous">
+        </button>
+        <span class="page-number">Page <span id="currentPage">1</span> of <span id="totalPages">2</span></span>
+        <button class="pagination-btn next" id="nextBtn">
+            <img src="icon/next.png" alt="Next">
+        </button>
+    </nav>
+
+    <!-- Placeholder untuk footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript untuk memuat header, footer, dan pagination -->
+    <script src="script.js"></script>
+    <script src="Bookmark.js"></script>
+
+    <!-- Script untuk memeriksa status Dark Mode dari Local Storage -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const darkModeStatus = localStorage.getItem('darkMode');
+            if (darkModeStatus === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</body>
+</html>

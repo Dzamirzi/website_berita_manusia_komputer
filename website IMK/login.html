@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Bagian logo dan nama situs -->
+        <div class="logo">T</div> <!-- Logo besar "T" -->
+        <div class="site-name">Big Time News</div> <!-- Nama situs -->
+
+        <!-- Form untuk login -->
+        <form id="loginForm">
+            <!-- Input untuk email dengan gambar "@" -->
+            <div class="input-group">
+                <img src="icon/@.png" alt="At Icon" class="input-icon"> <!-- Ganti dengan gambar @ -->
+                <input type="text" id="username" placeholder="USERNAME" required>
+            </div>
+
+            <!-- Input untuk password dengan gambar gembok -->
+            <div class="input-group">
+                <img src="icon/business_16571556 1.png" alt="Lock Icon" class="input-icon"> <!-- Gambar ikon kunci -->
+                <input type="password" id="password" placeholder="PASSWORD" required>
+            </div>
+
+            <!-- Link lupa password -->
+            <a href="#" class="forgot-password">Forget Password</a>
+
+            <!-- Tombol login -->
+            <button type="submit" class="login-btn">Log in</button>
+        </form>
+
+        <!-- Bagian untuk register jika belum memiliki akun -->
+        <div class="register">
+            <p>Not a Member? <a href="#">Join Now</a></p>
+        </div>
+
+        <!-- Tombol login menggunakan akun sosial media -->
+        <div class="social-login">
+            <img src="icon/social_10124147.png" alt="Google">
+            <img src="icon/facebook_1384021.png" alt="Facebook">
+            <img src="icon/twitter_5968830.png" alt="X">
+        </div>
+    </div>
+
+    <!-- Menghubungkan file login.js yang berisi logika login -->
+    <script src="login.js"></script>
+</body>
+</html>

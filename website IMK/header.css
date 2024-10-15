@@ -1,0 +1,25 @@
+/* Gaya untuk container header */
+.header-container {
+    background-color: #ffffff; /* Warna latar belakang header */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan di bawah header */
+}
+
+/* Gaya untuk teks dalam header */
+.header-container h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 36px;
+    color: #333;
+    margin: 0;
+}
+
+/* Dark Mode untuk header */
+.dark-mode .header-container {
+    background-color: #1e1e1e; /* Warna latar belakang header di Dark Mode */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Bayangan lebih terang di Dark Mode */
+}
+
+.dark-mode .header-container h1 {
+    color: #ffffff; /* Warna teks putih untuk Dark Mode */
+}
